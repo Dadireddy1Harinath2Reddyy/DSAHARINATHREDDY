@@ -2,12 +2,27 @@
 class string1
 {
 	public static void main(String[] args) 
-	{
-		String s1  =  "GeeksforGeeks";
+	{String s1  =  "GeeksforGeeks";
+		String s2 =  "GeeksforGeeks"; 
+		String s3 = new String("GeeksforGeeks"); 
+		if (s1 == s2)
+		{
+			System.out.println("Same");
+		}
+		if (s2 != s3)
+		{
+			System.out.println(" Not Same");
+		}
+		if(s1.equals(s3))
+		{
+			System.out.println("S1 and S3 are same content ");
+		}
+		
 		System.out.println(s1.length());
 		System.out.println(s1.charAt(4));
 		System.out.println(s1.substring(2));
 		System.out.println(s1.substring(2,5));
+
 
 
 
