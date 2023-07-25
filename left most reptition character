@@ -1,0 +1,23 @@
+
+// Left most repetining character in  a string  efficient solution
+class string1
+{ 
+   
+ public static void main(String[] args) 
+	{ 
+		 String s1 = "geeksforgeeks";
+		 int arr[] = new int[256];
+		 for (int i=0;i<s1.length() ;i++)
+		 {
+			 arr[s1.charAt(i)] ++;
+		 }
+		 for (int i=0;i<256;i++)
+		 {
+			 if (arr[s1.charAt(i)] > 0)
+			 {
+				 System.out.println(s1.charAt(i));
+				 break;
+			 }
+		 }
+	}
+}
