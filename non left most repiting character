@@ -1,0 +1,25 @@
+//The non left most reptiting character problem
+class string
+{
+	public static void main(String args[])
+	{
+		String s1 = "geeksforgeeks";
+		for (int i =0;i<s1.length() ;i++ )
+		{
+			 int count =0;
+			for (int j = i+1;j<s1.length() ;j++ )
+			{
+				if (s1.charAt(i) == s1.charAt(j))
+				{
+					count =1;
+				}
+			}
+			if (count == 0)
+			{
+				System.out.println("The non left most repiting character in the given string "+i);
+				break;
+			}
+
+		}
+	}
+}
